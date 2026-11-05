@@ -1424,3 +1424,281 @@ a {
     }
 
 }
+
+/* ==========================================
+   WEEK 5 — REDDIT DATA ANALYSIS
+   Editorial text + chart layout
+========================================== */
+
+#week-5.week-five-custom {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+    align-items: center !important;
+    gap: clamp(30px, 5vw, 65px) !important;
+
+    width: 100%;
+    height: 100svh !important;
+    min-height: 680px !important;
+
+    padding: 95px 8vw 70px !important;
+
+    background: #CFCDD3 !important;
+    color: #29272D !important;
+
+    overflow: hidden !important;
+}
+
+
+/* LEFT: TEXT CONTENT */
+
+#week-5 .week-five-copy {
+    width: 100%;
+    max-width: 600px;
+    min-width: 0;
+
+    align-self: center;
+}
+
+#week-5 .week-five-copy .kicker {
+    color: #C72E70;
+    margin-bottom: 18px;
+}
+
+#week-5 .week-five-copy h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(65px, 7vw, 98px);
+    font-weight: 400;
+    line-height: .9;
+    letter-spacing: -3px;
+
+    color: #29272D;
+    margin: 0;
+}
+
+#week-5 .week-five-copy h2 em {
+    color: #C72E70;
+    font-style: italic;
+}
+
+#week-5 .week-five-subtitle {
+    margin-top: 18px;
+    margin-bottom: 25px;
+
+    color: #77717B;
+    font-size: 9px;
+    line-height: 1.8;
+    letter-spacing: 1.5px;
+}
+
+
+/* REFLECTION BODY */
+
+#week-5 .week-five-text {
+    max-height: 49vh;
+    overflow-y: auto;
+
+    padding-top: 17px;
+    padding-right: 12px;
+
+    border-top: 1px solid rgba(41,39,45,.25);
+}
+
+#week-5 .week-five-text h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(20px, 1.8vw, 25px);
+    font-weight: 400;
+    line-height: 1.35;
+
+    color: #29272D;
+    margin-bottom: 16px;
+}
+
+#week-5 .week-five-text p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10.5px;
+    line-height: 1.8;
+
+    color: #504C55;
+    margin-bottom: 13px;
+}
+
+
+/* DATA HIGHLIGHT */
+
+#week-5 .week-five-stat {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    margin-top: 19px;
+    padding-top: 14px;
+
+    border-top: 1px solid rgba(41,39,45,.2);
+}
+
+#week-5 .week-five-stat-number {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+    color: #C72E70;
+    white-space: nowrap;
+}
+
+#week-5 .week-five-stat-caption {
+    max-width: 175px;
+
+    color: #77717B;
+    font-size: 8px;
+    line-height: 1.6;
+    letter-spacing: 1.2px;
+}
+
+
+/* RIGHT: IMAGE AREA */
+
+#week-5 .week-five-visual {
+    width: 100%;
+    min-width: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#week-5 .week-five-figure {
+    width: 100%;
+    max-width: 490px;
+
+    margin: 0;
+    padding: 12px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(41,39,45,.12);
+
+    box-shadow: 0 15px 35px rgba(41,39,45,.12);
+}
+
+#week-5 .week-five-figure img {
+    display: block;
+
+    width: 100%;
+    height: min(65vh, 570px);
+
+    object-fit: contain;
+    object-position: center;
+
+    background: #FFFFFF;
+}
+
+#week-5 .week-five-figure figcaption {
+    margin-top: 9px;
+
+    color: #77717B;
+    font-size: 8px;
+    letter-spacing: 1.5px;
+}
+
+
+/* SUBTLE SCROLLBAR */
+
+#week-5 .week-five-text::-webkit-scrollbar {
+    width: 4px;
+}
+
+#week-5 .week-five-text::-webkit-scrollbar-thumb {
+    background: #D7A0B7;
+    border-radius: 10px;
+}
+
+
+/* TABLET */
+
+@media (max-width: 850px) {
+
+    #week-5.week-five-custom {
+        grid-template-columns: 1fr !important;
+
+        height: auto !important;
+        min-height: 100svh !important;
+
+        padding: 105px 7vw 40px !important;
+        gap: 28px !important;
+
+        overflow: visible !important;
+    }
+
+    #week-5 .week-five-copy {
+        max-width: 100%;
+    }
+
+    #week-5 .week-five-text {
+        max-height: none;
+        overflow: visible;
+    }
+
+    #week-5 .week-five-visual {
+        max-width: 100%;
+    }
+
+    #week-5 .week-five-figure {
+        max-width: 430px;
+    }
+
+    #week-5 .week-five-figure img {
+        height: 500px;
+        max-height: 60vh;
+    }
+
+    #week-5 .slide-bottom {
+        position: relative;
+        left: auto;
+        right: auto;
+        bottom: auto;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 560px) {
+
+    #week-5.week-five-custom {
+        padding: 110px 7% 30px !important;
+        gap: 22px !important;
+    }
+
+    #week-5 .week-five-copy h2 {
+        font-size: 62px;
+    }
+
+    #week-5 .week-five-subtitle {
+        font-size: 8px;
+    }
+
+    #week-5 .week-five-text {
+        padding-top: 15px;
+    }
+
+    #week-5 .week-five-text h3 {
+        font-size: 20px;
+    }
+
+    #week-5 .week-five-text p {
+        font-size: 10.5px;
+        line-height: 1.8;
+    }
+
+    #week-5 .week-five-figure {
+        padding: 8px;
+    }
+
+    #week-5 .week-five-figure img {
+        height: 420px;
+        max-height: none;
+    }
+
+    #week-5 .week-five-stat-number {
+        font-size: 24px;
+    }
+
+}
