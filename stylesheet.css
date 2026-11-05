@@ -11,30 +11,25 @@
   --serif: Georgia, "Times New Roman", serif;
   --sans: Arial, Helvetica, sans-serif;
 }
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
 html {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
 }
-
 body {
   color: var(--ink);
   background: var(--paper);
   font-family: var(--sans);
   overflow-x: hidden;
 }
-
 a {
   color: inherit;
   text-decoration: none;
 }
-
 .topbar {
   position: fixed;
   inset: 0 0 auto 0;
@@ -48,48 +43,39 @@ a {
   border-bottom: 1px solid rgba(41,39,45,.12);
   backdrop-filter: blur(12px);
 }
-
 .brand {
   font-family: var(--serif);
   font-size: 18px;
   letter-spacing: 1.5px;
   white-space: nowrap;
 }
-
 .brand span {
   color: var(--pink-dark);
   padding-left: 3px;
 }
-
 .topbar nav {
   display: flex;
   gap: clamp(12px,2.4vw,34px);
 }
-
 .topbar nav a {
   font-size: 9px;
   letter-spacing: 1.4px;
   color: #5D5961;
 }
-
 .topbar nav a:hover {
   color: var(--pink-dark);
 }
-
 .topbar nav a span {
   margin-left: 5px;
 }
-
 .topbar-note {
   font-size: 8px;
   letter-spacing: 1.8px;
   color: #8E8991;
 }
-
 .deck {
   width: 100%;
 }
-
 .slide {
   min-height: 100vh;
   height: 100vh;
@@ -103,7 +89,6 @@ a {
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
-
 .slide-bottom {
   position: absolute;
   left: 8vw;
@@ -116,21 +101,17 @@ a {
   font-size: 9px;
   letter-spacing: 1.8px;
 }
-
 .slide-bottom a {
   font-size: 20px;
   color: var(--pink-dark);
   line-height: 1;
 }
-
 .slide-bottom-light {
   color: rgba(255,255,255,.62);
 }
-
 .slide-bottom-light a {
   color: var(--pink-soft);
 }
-
 .kicker {
   color: var(--pink-dark);
   font-size: 9px;
@@ -141,34 +122,27 @@ a {
   gap: 12px;
   margin-bottom: 22px;
 }
-
 .kicker-line {
   width: 28px;
   height: 2px;
   background: var(--pink);
   display: inline-block;
 }
-
 .kicker-light {
   color: var(--pink-soft);
 }
-
-
 /* SLIDE 1 */
-
 .slide-home {
   background: #D9D8DC;
   display: grid;
   grid-template-columns: 1.08fr .92fr;
   gap: 6vw;
 }
-
 .home-copy {
   position: relative;
   z-index: 2;
   max-width: 650px;
 }
-
 .home-copy h1 {
   font-family: var(--serif);
   font-size: clamp(68px,8vw,118px);
@@ -178,12 +152,10 @@ a {
   margin-bottom: 30px;
   color: var(--ink);
 }
-
 .home-copy h1 em {
   font-style: italic;
   color: var(--pink-dark);
 }
-
 .home-lead {
   max-width: 470px;
   font-family: var(--serif);
@@ -191,14 +163,12 @@ a {
   line-height: 1.4;
   margin-bottom: 18px;
 }
-
 .home-body {
   max-width: 470px;
   font-size: 12px;
   line-height: 2;
   color: #605D65;
 }
-
 .pill-link {
   display: inline-flex;
   gap: 28px;
@@ -210,17 +180,14 @@ a {
   letter-spacing: 1.7px;
   transition: background .2s,color .2s;
 }
-
 .pill-link span {
   font-size: 16px;
   color: var(--pink-dark);
 }
-
 .pill-link:hover {
   background: var(--ink);
   color: white;
 }
-
 .home-art {
   position: relative;
   height: min(68vh,590px);
@@ -228,7 +195,6 @@ a {
   overflow: hidden;
   background: linear-gradient(140deg,#B9B7BD 0 32%,#EF83AC 32% 67%,#3D3942 67%);
 }
-
 .home-art::before {
   content: "";
   position: absolute;
@@ -240,7 +206,6 @@ a {
   background: repeating-conic-gradient(from 6deg at 50% 50%,#F8D5E1 0deg 12deg,#EB5893 12deg 28deg,#D63D7C 28deg 38deg);
   clip-path: polygon(50% 0,60% 35%,94% 8%,72% 43%,100% 58%,63% 62%,82% 100%,50% 70%,18% 100%,37% 62%,0 58%,28% 43%,6% 8%,40% 35%);
 }
-
 .home-art::after {
   content: "";
   position: absolute;
@@ -252,7 +217,6 @@ a {
   background: #28262D;
   box-shadow: 0 0 0 16px rgba(255,255,255,.16);
 }
-
 .art-disc {
   position: absolute;
   right: -6%;
@@ -262,7 +226,6 @@ a {
   border-radius: 50%;
   background: rgba(255,255,255,.22);
 }
-
 .art-caption {
   position: absolute;
   z-index: 3;
@@ -275,7 +238,6 @@ a {
   font-size: 8px;
   letter-spacing: 2px;
 }
-
 .art-vertical {
   position: absolute;
   z-index: 3;
@@ -286,10 +248,7 @@ a {
   color: white;
   letter-spacing: 2px;
 }
-
-
 /* SLIDE 2 */
-
 .slide-interests {
   background: var(--ink);
   color: white;
@@ -297,61 +256,52 @@ a {
   grid-template-columns: 1.05fr .95fr;
   gap: 8vw;
 }
-
 .interest-art {
   position: relative;
   min-height: min(65vh,570px);
   background: linear-gradient(135deg,#C7C5CB 0 22%,#F05B94 22% 68%,#5A5660 68%);
   overflow: hidden;
 }
-
 .court {
   position: absolute;
   inset: 12%;
   border: 2px solid rgba(255,255,255,.85);
 }
-
 .court::before,
 .court::after {
   content: "";
   position: absolute;
   background: rgba(255,255,255,.85);
 }
-
 .court::before {
   width: 2px;
   height: 100%;
   left: 50%;
   top: 0;
 }
-
 .court::after {
   height: 2px;
   width: 100%;
   left: 0;
   top: 50%;
 }
-
 .court-line {
   position: absolute;
   background: rgba(255,255,255,.85);
   z-index: 2;
 }
-
 .court-line-a {
   width: 70%;
   height: 2px;
   top: 35%;
   left: 15%;
 }
-
 .court-line-b {
   width: 70%;
   height: 2px;
   top: 65%;
   left: 15%;
 }
-
 .racket {
   position: absolute;
   width: 37%;
@@ -364,7 +314,6 @@ a {
   z-index: 3;
   background: repeating-linear-gradient(90deg,transparent 0 12px,rgba(38,36,42,.55) 13px 14px);
 }
-
 .racket-grip {
   position: absolute;
   width: 15px;
@@ -375,7 +324,6 @@ a {
   bottom: -10%;
   z-index: 2;
 }
-
 .ball {
   position: absolute;
   right: 16%;
@@ -387,7 +335,6 @@ a {
   border: 3px solid white;
   z-index: 4;
 }
-
 .ball::after {
   content: "";
   position: absolute;
@@ -395,7 +342,6 @@ a {
   border: 2px solid white;
   border-radius: 50%;
 }
-
 .art-stamp {
   position: absolute;
   z-index: 5;
@@ -408,97 +354,79 @@ a {
   color: white;
   transform: rotate(-9deg);
 }
-
 .interest-copy {
   max-width: 540px;
 }
-
 .interest-copy h2 {
   font-size: clamp(70px,8vw,110px);
   line-height: .88;
   margin-bottom: 28px;
 }
-
 .interest-copy h2 em {
   color: var(--pink);
 }
-
 .pink-rule {
   width: 70px;
   height: 3px;
   background: var(--pink);
   margin: 25px 0;
 }
-
 .interest-copy h3 {
   font-size: 25px;
   margin-bottom: 15px;
   color: #F5DDE7;
 }
-
 .interest-copy > p:not(.kicker) {
   font-size: 12px;
   line-height: 2.1;
   color: #D1CED3;
   max-width: 440px;
 }
-
 .interest-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 9px;
   margin-top: 25px;
 }
-
 .interest-tags span {
   border: 1px solid #77727B;
   padding: 8px 11px;
   font-size: 8px;
   letter-spacing: 1.5px;
 }
-
 .pill-light {
   border-color: #E7DCE2;
   color: white;
 }
-
 .pill-light span {
   color: var(--pink-light);
 }
-
 .pill-light:hover {
   background: white;
   color: var(--ink);
 }
-
-
 /* SLIDE 3 */
-
 .slide-reflections {
   background: #F0EFF0;
   display: grid;
   grid-template-columns: .95fr 1.05fr;
   gap: 8vw;
 }
-
 .reflection-intro h2 {
   font-size: clamp(68px,8vw,108px);
   line-height: .88;
   letter-spacing: -3px;
   margin-bottom: 24px;
 }
-
 .reflection-intro h2 em {
   color: var(--pink-dark);
 }
-
 .reflection-intro > p:not(.kicker) {
   max-width: 390px;
   color: #68646D;
   font-size: 12px;
   line-height: 2;
 }
-
 .overview-mark {
   margin-top: 35px;
   display: inline-block;
@@ -511,15 +439,12 @@ a {
   color: var(--pink-dark);
   transform: rotate(-5deg);
 }
-
 .overview-mark b {
   color: var(--ink);
 }
-
 .week-menu {
   border-top: 1px solid #C9C5CC;
 }
-
 .week-menu a {
   min-height: 83px;
   display: grid;
@@ -529,22 +454,18 @@ a {
   border-bottom: 1px solid #C9C5CC;
   padding: 10px 8px;
 }
-
 .week-menu a:hover {
   background: #F8DCE7;
 }
-
 .menu-no {
   font-family: var(--serif);
   font-size: 32px;
   color: var(--pink-dark);
 }
-
 .menu-name {
   font-family: var(--serif);
   font-size: 23px;
 }
-
 .menu-name small {
   display: block;
   font-family: var(--sans);
@@ -553,36 +474,28 @@ a {
   color: #8A858E;
   margin-top: 4px;
 }
-
 .menu-arrow {
   justify-self: end;
   color: var(--pink-dark);
   font-size: 21px;
 }
-
-
 /* WEEK SLIDES */
-
 .week-slide {
   display: grid;
   grid-template-columns: .9fr 1.1fr;
   gap: 7vw;
 }
-
 .week-content {
   max-width: 600px;
 }
-
 .week-content h2 {
   font-size: clamp(70px,8vw,112px);
   line-height: .9;
   margin: 8px 0 10px;
 }
-
 .week-content h2 em {
   color: var(--pink-dark);
 }
-
 .week-subtitle {
   color: #807B84;
   font-size: 10px;
@@ -590,13 +503,11 @@ a {
   text-transform: uppercase;
   margin-bottom: 28px;
 }
-
 .week-visual {
   position: relative;
   min-height: min(65vh,570px);
   overflow: hidden;
 }
-
 .week-visual .visual-word {
   position: absolute;
   z-index: 2;
@@ -607,7 +518,6 @@ a {
   color: rgba(255,255,255,.9);
   line-height: 1;
 }
-
 .week-visual .visual-small {
   position: absolute;
   z-index: 3;
@@ -617,7 +527,6 @@ a {
   font-size: 8px;
   letter-spacing: 2px;
 }
-
 .visual-orbit {
   position: absolute;
   width: 75%;
@@ -628,7 +537,6 @@ a {
   top: 20%;
   transform: rotate(-22deg) scaleY(.65);
 }
-
 .visual-block {
   position: absolute;
   width: 42%;
@@ -639,77 +547,58 @@ a {
   transform: rotate(14deg);
   mix-blend-mode: screen;
 }
-
 .week-two {
   background: #DAD9DE;
 }
-
 .visual-two {
   background: linear-gradient(145deg,#B9B8C0 0 30%,#EF5D96 30% 68%,#38353F 68%);
 }
-
 .visual-two .visual-orbit {
   border-width: 18px;
   border-color: #F7C7D9;
 }
-
 .week-three {
   background: #35323B;
   color: white;
 }
-
 .week-three .week-content h2 {
   color: white;
 }
-
 .week-three .week-content h2 em {
   color: #F179AA;
 }
-
 .week-three .week-subtitle {
   color: #C6C1CB;
 }
-
 .visual-three {
   background: linear-gradient(125deg,#E7C5D3 0 28%,#E84D8A 28% 55%,#807C88 55% 100%);
 }
-
 .visual-three .visual-orbit {
   width: 66%;
   border: 18px solid rgba(255,255,255,.7);
 }
-
 .week-four {
   background: #F5D5E1;
 }
-
 .visual-four {
   background: linear-gradient(140deg,#403D46 0 26%,#E74F8B 26% 63%,#D7D6DB 63%);
 }
-
 .visual-four .visual-orbit {
   border: 20px solid rgba(255,255,255,.7);
 }
-
 .week-five {
   background: #CFCDD3;
 }
-
 .visual-five {
   background: linear-gradient(140deg,#F18BB1 0 36%,#3B3841 36% 69%,#BEBCC4 69%);
 }
-
 .visual-five .visual-orbit {
   border: 14px solid rgba(255,255,255,.8);
 }
-
-
 /* REFLECTION TEXT */
-
 .reflection-points {
   border-top: 1px solid rgba(41,39,45,.22);
 }
-
 .reflection-points article {
   display: grid;
   grid-template-columns: 35px 1fr;
@@ -717,57 +606,45 @@ a {
   padding: 14px 0;
   border-bottom: 1px solid rgba(41,39,45,.18);
 }
-
 .reflection-points article > span {
   font-family: var(--serif);
   font-size: 20px;
   color: var(--pink-dark);
 }
-
 .reflection-points h3 {
   font-size: 19px;
   margin-bottom: 4px;
 }
-
 .reflection-points p {
   font-size: 10px;
   line-height: 1.7;
   color: #66616A;
   max-width: 470px;
 }
-
 .reflection-points-light {
   border-color: rgba(255,255,255,.25);
 }
-
 .reflection-points-light article {
   border-color: rgba(255,255,255,.2);
 }
-
 .reflection-points-light h3 {
   color: #FFF;
 }
-
 .reflection-points-light p {
   color: #D7D2DA;
 }
-
 .reflection-points-light article > span {
   color: #F18AB4;
 }
-
 .week-three .kicker {
   color: #F4B9CF;
 }
-
 .week-four .week-content h2 em {
   color: #C72E70;
 }
-
 .week-five .week-content h2 em {
   color: #C72E70;
 }
-
 .text-link {
   display: inline-block;
   margin-top: 23px;
@@ -777,68 +654,52 @@ a {
   border-bottom: 1px solid var(--pink-dark);
   padding-bottom: 7px;
 }
-
 .text-link span {
   margin-left: 16px;
   font-size: 16px;
 }
-
 .text-link-light {
   color: #F5B9CF;
   border-color: #F5B9CF;
 }
-
-
 /* SHORT DESKTOP SCREENS */
-
 @media (min-width: 851px) and (max-height: 760px) {
   .slide {
     padding-top: 78px;
     padding-bottom: 56px;
   }
-
   .home-copy h1 {
     font-size: clamp(60px,7vw,92px);
     margin-bottom: 22px;
   }
-
   .home-lead {
     font-size: clamp(18px,1.8vw,23px);
     margin-bottom: 12px;
   }
-
   .home-body {
     font-size: 11px;
     line-height: 1.75;
   }
-
   .home-art {
     height: min(56vh,430px);
     min-height: 270px;
   }
-
   .interest-art,
   .week-visual {
     min-height: min(55vh,420px);
   }
-
   .interest-copy h2,
   .week-content h2 {
     font-size: clamp(64px,7vw,92px);
   }
-
   .reflection-intro h2 {
     font-size: clamp(64px,7vw,90px);
   }
-
   .week-visual .visual-word {
     font-size: clamp(80px,10vw,135px);
   }
 }
-
-
 /* TABLET */
-
 @media (max-width: 850px) {
   .slide {
     height: auto;
@@ -847,7 +708,6 @@ a {
     padding-top: 105px;
     padding-bottom: 85px;
   }
-
   .slide-home,
   .slide-interests,
   .slide-reflections,
@@ -855,35 +715,27 @@ a {
     grid-template-columns: 1fr;
     gap: 35px;
   }
-
   .home-art,
   .interest-art,
   .week-visual {
     min-height: 340px;
     height: 45vh;
   }
-
   .week-content {
     order: 1;
   }
-
   .week-visual {
     order: 2;
   }
-
   .week-slide:nth-of-type(odd) .week-visual {
     order: 2;
   }
 }
-
-
 /* MOBILE */
-
 @media (max-width: 560px) {
   html {
     scroll-snap-type: y proximity;
   }
-
   .topbar {
     height: auto;
     min-height: 60px;
@@ -892,105 +744,80 @@ a {
     flex-direction: column;
     gap: 10px;
   }
-
   .brand {
     font-size: 16px;
   }
-
   .topbar nav {
     width: 100%;
     justify-content: space-between;
     gap: 8px;
   }
-
   .topbar nav a {
     font-size: 8px;
     letter-spacing: .7px;
   }
-
   .topbar nav a span {
     display: none;
   }
-
   .topbar-note {
     display: none;
   }
-
   .slide {
     padding: 105px 7% 82px;
   }
-
   .home-copy h1 {
     font-size: 60px;
     letter-spacing: -2px;
   }
-
   .home-art {
     min-height: 290px;
     height: 38vh;
   }
-
   .interest-art {
     min-height: 300px;
   }
-
   .interest-copy h2 {
     font-size: 66px;
   }
-
   .reflection-intro h2 {
     font-size: 64px;
   }
-
   .week-menu a {
     min-height: 72px;
     grid-template-columns: 45px 1fr 22px;
   }
-
   .menu-name {
     font-size: 20px;
   }
-
   .week-content h2 {
     font-size: 68px;
   }
-
   .week-visual {
     min-height: 280px;
     height: 35vh;
   }
-
   .slide-bottom {
     left: 7%;
     right: 7%;
     bottom: 18px;
     font-size: 8px;
   }
-
   .reflection-points article {
     grid-template-columns: 28px 1fr;
   }
 }
-
-
-
-
-
 /* =================================
    WEEK 2 - TEXT ONLY EDITORIAL
 ================================= */
-
 .week-text-only {
     grid-template-columns: 0.75fr 1.25fr;
     gap: 7vw;
     background: #DAD9DE;
 }
-
 .week-heading {
     position: relative;
     align-self: center;
 }
-
 .week-heading h2 {
     font-family: Georgia, "Times New Roman", serif;
     font-size: clamp(70px, 8vw, 112px);
@@ -998,16 +825,13 @@ a {
     font-weight: 400;
     color: #29272D;
 }
-
 .week-heading h2 em {
     color: #C72E70;
 }
-
 .week-heading .week-subtitle {
     margin-top: 20px;
     line-height: 1.7;
 }
-
 .week-number {
     font-family: Georgia, "Times New Roman", serif;
     font-size: clamp(130px, 18vw, 230px);
@@ -1015,354 +839,329 @@ a {
     color: rgba(199, 46, 112, 0.13);
     margin-top: 25px;
 }
-
 .week-label {
     font-size: 9px;
     letter-spacing: 2px;
     color: #77717B;
     margin-top: -10px;
 }
-
 .week-reflection-text {
     max-width: 720px;
     max-height: 68vh;
     overflow-y: auto;
     padding-right: 12px;
 }
-
 .week-reflection-text h3 {
     font-family: Georgia, "Times New Roman", serif;
     font-size: clamp(21px, 2vw, 27px);
     line-height: 1.3;
     margin-bottom: 22px;
 }
-
 .week-reflection-text p {
     font-size: 11px;
     line-height: 1.9;
     color: #504C55;
     margin-bottom: 15px;
 }
-
 /* MOBILE VERSION */
-
 @media (max-width: 850px) {
     .week-text-only {
         grid-template-columns: 1fr;
         gap: 20px;
     }
-
     .week-number {
         display: none;
     }
-
     .week-reflection-text {
         max-height: none;
         overflow: visible;
     }
 }
 
-
-<section class="slide week-slide week-three-custom" id="week-3" aria-label="Week 3 reflection">
-
-  <div class="week-three-heading">
-    <p class="kicker">
-      <span class="kicker-line"></span>
-      COURSE JOURNAL / 02
-    </p >
-
-    <h2>Week <em>Three.</em></h2>
-
-    <p class="week-three-subtitle">
-      Exploring BBC iPlayer with Web Scraper
-    </p >
-
-    <div class="week-three-number">03</div>
-    <p class="week-three-label">EXPLORE · COLLECT · ANALYSE</p >
-  </div>
-
-  <div class="week-three-main">
-
-    <div class="week-three-copy">
-      <h3>Workshop Reflection: Exploring BBC iPlayer with Web Scraper</h3>
-
-      <p>
-        In this workshop, I learned how to use Web Scraper to collect information from websites. Using BBC iPlayer as an example, I explored how to create a sitemap, use different selectors and extract programme information. I also learned how parent and child selectors work together and how to check collected data through the Data Preview function.
-      </p >
-
-      <p>
-        One of the main difficulties was choosing the correct HTML elements and selectors. Sometimes, the preview showed the expected information, but the full scraping process did not work as expected. I realised that website structures and dynamic content can affect the results, so choosing and adjusting selectors requires patience and repeated testing.
-      </p >
-
-      <p>
-        Overall, this workshop helped me understand the basic process of web scraping and how website information can be collected and organised into data. It also made me realise that automated tools are not always completely accurate, and the results still need to be checked carefully.
-      </p >
-    </div>
-
-    <div class="week-three-gallery">
-
-      <figure class="week-three-figure">
-        < img src="./images/week3-bbc.png" alt="BBC iPlayer website with Web Scraper data preview">
-        <figcaption>
-          FIG. 01 — Collecting programme information from BBC iPlayer
-        </figcaption>
-      </figure>
-
-      <figure class="week-three-figure">
-        < img src="./images/week3-data.png" alt="Exported web scraping data displayed in Excel">
-        <figcaption>
-          FIG. 02 — Exported data from the web scraping process
-        </figcaption>
-      </figure>
-
-    </div>
-  </div>
-
-  <div class="slide-bottom">
-    <a href=" ">↑ OVERVIEW</a >
-    <span>05 / 07</span>
-    <a href="#week-4" aria-label="Next slide">↓</a >
-  </div>
-
-</section>
-
-
-<section class="slide week-slide week-three-custom" id="week-3" aria-label="Week 3 reflection">
-
-  <div class="week-three-heading">
-
-    <p class="kicker">
-      <span class="kicker-line"></span>
-      COURSE JOURNAL / 02
-    </p >
-
-    <h2>Week <em>Three.</em></h2>
-
-    <p class="week-three-subtitle">
-      Exploring BBC iPlayer with Web Scraper
-    </p >
-
-    <div class="week-three-number">03</div>
-
-    <p class="week-three-label">
-      EXPLORE · COLLECT · ANALYSE
-    </p >
-
-  </div>
-
-
-  <div class="week-three-main">
-
-    <!-- LEFT: REFLECTION TEXT -->
-
-    <div class="week-three-copy">
-
-      <h3>Workshop Reflection: Exploring BBC iPlayer with Web Scraper</h3>
-
-      <p>
-        In this workshop, I learned how to use Web Scraper to collect information from websites. Using BBC iPlayer as an example, I explored how to create a sitemap, use different selectors and extract programme information. I also learned how parent and child selectors work together and how to check collected data through the Data Preview function.
-      </p >
-
-      <p>
-        One of the main difficulties was choosing the correct HTML elements and selectors. Sometimes, the preview showed the expected information, but the full scraping process did not work as expected. I realised that website structures and dynamic content can affect the results, so choosing and adjusting selectors requires patience and repeated testing.
-      </p >
-
-      <p>
-        Overall, this workshop helped me understand the basic process of web scraping and how website information can be collected and organised into data. It also made me realise that automated tools are not always completely accurate, and the results still need to be checked carefully.
-      </p >
-
-    </div>
-
-
-    <!-- RIGHT: TWO IMAGES -->
-
-    <div class="week-three-gallery">
-
-      <figure class="week-three-figure">
-
-        <img
-          src="./week3-bbc.jpeg"
-          alt="BBC iPlayer website with Web Scraper data preview">
-
-        <figcaption>
-          FIG. 01 — Collecting programme information from BBC iPlayer
-        </figcaption>
-
-      </figure>
-
-
-      <figure class="week-three-figure">
-
-        <img
-          src="./week3-data.png"
-          alt="Exported web scraping data displayed in Excel">
-
-        <figcaption>
-          FIG. 02 — Exported data from the web scraping process
-        </figcaption>
-
-      </figure>
-
-    </div>
-
-  </div>
-
-
-  <div class="slide-bottom">
-
-    <a href=" ">↑ OVERVIEW</a >
-
-    <span>05 / 07</span>
-
-    <a href="#week-4" aria-label="Next slide">↓</a >
-
-  </div>
-
-</section>
-
-
-/* ==========================================
-   WEEK 3 — FINAL LAYOUT FIX
-========================================== */
+/* =========================================================
+   WEEK 3 鈥� BBC iPLAYER / WEB SCRAPER
+   Final overrides based on the HTML and stylesheet in root.docx
+   This section intentionally supports the current HTML class names:
+   .week-three-main, .week-three-copy, .week-three-gallery,
+   .week-three-figure, and ordinary <img> elements.
+========================================================= */
 
 #week-3.week-three-custom {
     display: grid !important;
-    grid-template-columns: 1fr !important;
-    grid-template-rows: auto 1fr auto !important;
-    gap: 22px !important;
-    padding: 48px 6vw 30px !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    grid-template-rows: auto minmax(0, 1fr) auto !important;
+    align-items: stretch !important;
+    gap: clamp(14px, 2vh, 22px) !important;
+
+    width: 100%;
+    height: 100svh !important;
+    min-height: 680px !important;
+    max-height: none !important;
+
+    padding: 88px 7vw 58px !important;
+    overflow: hidden !important;
+
+    color: var(--ink) !important;
     background: #DAD9DE !important;
-    color: #29272D !important;
-    box-sizing: border-box;
 }
 
-/* LARGE EDITORIAL TITLE */
-
-#week-3 .week-three-heading {
-    position: relative;
+/* Heading */
+#week-3.week-three-custom .week-three-heading {
+    position: relative !important;
     display: block !important;
-}
-
-#week-3 .week-three-heading h2 {
-    display: block !important;
-    font-family: Georgia, "Times New Roman", serif !important;
-    font-size: clamp(58px, 7vw, 88px) !important;
-    font-weight: 400 !important;
-    line-height: 0.95 !important;
-    color: #29272D !important;
-    margin: 0 !important;
-}
-
-#week-3 .week-three-heading h2 em {
-    color: #C72E70 !important;
-}
-
-#week-3 .week-three-subtitle {
-    margin-top: 10px !important;
-    font-size: 12px !important;
-    letter-spacing: 1px;
-    color: #77717B !important;
-}
-
-#week-3 .week-three-number {
-    position: absolute;
-    right: 3%;
-    top: -12px;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 110px;
-    color: rgba(199, 46, 112, 0.10);
-}
-
-/* TWO-COLUMN CONTENT */
-
-#week-3 .week-three-layout {
-    display: grid !important;
-    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr) !important;
-    align-items: center !important;
-    gap: 4vw !important;
-    width: 100% !important;
-    min-height: 0;
-}
-
-#week-3 .week-three-copy {
-    max-width: 540px;
+    align-self: start !important;
+    width: 100%;
     min-width: 0;
 }
 
-#week-3 .week-three-copy h3 {
-    font-family: Georgia, "Times New Roman", serif !important;
-    font-size: 23px !important;
-    line-height: 1.3 !important;
+#week-3.week-three-custom .week-three-heading .kicker {
+    margin: 0 0 10px !important;
+    color: var(--pink-dark) !important;
+    font-size: 9px !important;
+    letter-spacing: 2.5px !important;
+}
+
+#week-3.week-three-custom .week-three-heading h2 {
+    display: block !important;
+    margin: 0 !important;
+    color: var(--ink) !important;
+    font-family: var(--serif) !important;
+    font-size: clamp(58px, 6.6vw, 88px) !important;
     font-weight: 400 !important;
-    color: #29272D !important;
-    margin-bottom: 18px;
+    line-height: .88 !important;
+    letter-spacing: -2px !important;
 }
 
-#week-3 .week-three-copy p {
-    font-size: 11px !important;
-    line-height: 1.8 !important;
-    color: #504C55 !important;
-    margin-bottom: 13px;
+#week-3.week-three-custom .week-three-heading h2 em {
+    color: var(--pink-dark) !important;
+    font-style: italic !important;
 }
 
-/* CONTROLLED IMAGE GALLERY */
+#week-3.week-three-custom .week-three-subtitle {
+    margin: 10px 0 0 !important;
+    color: #77717B !important;
+    font-size: 10px !important;
+    line-height: 1.6 !important;
+    letter-spacing: 1.8px !important;
+    text-transform: uppercase;
+}
 
-#week-3 .week-three-gallery-fixed {
+#week-3.week-three-custom .week-three-number {
+    position: absolute !important;
+    top: -15px !important;
+    right: 4% !important;
+    margin: 0 !important;
+    color: rgba(199, 46, 112, .12) !important;
+    font-family: var(--serif) !important;
+    font-size: clamp(100px, 12vw, 150px) !important;
+    line-height: .9 !important;
+    pointer-events: none;
+}
+
+#week-3.week-three-custom .week-three-label {
+    position: absolute !important;
+    right: 4% !important;
+    bottom: 4px !important;
+    margin: 0 !important;
+    color: #77717B !important;
+    font-size: 8px !important;
+    letter-spacing: 2px !important;
+}
+
+/* Main content: reflection on the left, images on the right */
+#week-3.week-three-custom .week-three-main {
     display: grid !important;
-    grid-template-columns: 1fr !important;
-    gap: 13px !important;
+    grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr) !important;
+    align-items: center !important;
+    gap: clamp(28px, 4.5vw, 68px) !important;
+
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    height: 100% !important;
+}
+
+#week-3.week-three-custom .week-three-copy {
+    display: block !important;
+    align-self: center !important;
     width: 100% !important;
     max-width: 560px !important;
-    justify-self: end;
-    min-width: 0;
+    min-width: 0 !important;
+    max-height: 100% !important;
+    overflow-y: auto !important;
+    padding: 4px 12px 4px 0 !important;
 }
 
-#week-3 .week-three-figure {
+#week-3.week-three-custom .week-three-copy h3 {
+    margin: 0 0 18px !important;
+    color: var(--ink) !important;
+    font-family: var(--serif) !important;
+    font-size: clamp(20px, 1.8vw, 26px) !important;
+    font-weight: 400 !important;
+    line-height: 1.25 !important;
+}
+
+#week-3.week-three-custom .week-three-copy p {
+    margin: 0 0 13px !important;
+    color: #504C55 !important;
+    font-family: var(--sans) !important;
+    font-size: 11px !important;
+    line-height: 1.8 !important;
+}
+
+/* Image gallery 鈥� deliberately target the actual HTML class in the Word file */
+#week-3.week-three-custom .week-three-gallery {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    grid-template-rows: repeat(2, minmax(0, 1fr)) !important;
+    align-content: center !important;
+    align-items: center !important;
+    justify-items: stretch !important;
+    gap: 12px !important;
+
     width: 100% !important;
-    margin: 0 !important;
-    min-width: 0;
+    max-width: 650px !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    height: 100% !important;
+    justify-self: end !important;
 }
 
-#week-3 .week-three-img {
+#week-3.week-three-custom .week-three-figure {
+    display: grid !important;
+    grid-template-rows: minmax(0, 1fr) auto !important;
+    gap: 5px !important;
+
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    height: 100% !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+}
+
+#week-3.week-three-custom .week-three-figure img,
+#week-3.week-three-custom .week-three-img {
     display: block !important;
     width: 100% !important;
-    height: 185px !important;
-    max-height: 185px !important;
+    height: 100% !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+
     object-fit: contain !important;
+    object-position: center !important;
     background: #29272D !important;
-    border: 1px solid rgba(41, 39, 45, 0.15);
+    border: 1px solid rgba(41, 39, 45, .14);
 }
 
-#week-3 .week-three-figure figcaption {
-    font-size: 8px !important;
-    letter-spacing: 1px;
+#week-3.week-three-custom .week-three-figure figcaption {
+    margin: 0 !important;
     color: #77717B !important;
-    margin-top: 6px;
+    font-family: var(--sans) !important;
+    font-size: 8px !important;
+    line-height: 1.4 !important;
+    letter-spacing: 1.1px !important;
+    text-transform: uppercase;
 }
 
-/* MOBILE */
+/* Keep the footer aligned with the other portfolio slides */
+#week-3.week-three-custom .slide-bottom {
+    position: absolute !important;
+    left: 7vw !important;
+    right: 7vw !important;
+    bottom: 18px !important;
+    z-index: 5;
+}
 
+/* Tablet and narrow screens */
 @media (max-width: 850px) {
     #week-3.week-three-custom {
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) !important;
         grid-template-rows: auto auto auto !important;
-        padding: 38px 7vw 45px !important;
-    }
+        gap: 22px !important;
 
-    #week-3 .week-three-layout {
-        grid-template-columns: 1fr !important;
-        gap: 24px !important;
-    }
-
-    #week-3 .week-three-gallery-fixed {
-        max-width: 100% !important;
-    }
-
-    #week-3 .week-three-img {
         height: auto !important;
-        max-height: 220px !important;
+        min-height: 100svh !important;
+        max-height: none !important;
+        padding: 100px 7vw 82px !important;
+        overflow: visible !important;
     }
 
-    #week-3 .week-three-number {
-        display: none;
+    #week-3.week-three-custom .week-three-heading h2 {
+        font-size: clamp(54px, 11vw, 72px) !important;
+    }
+
+    #week-3.week-three-custom .week-three-number,
+    #week-3.week-three-custom .week-three-label {
+        display: none !important;
+    }
+
+    #week-3.week-three-custom .week-three-main {
+        grid-template-columns: minmax(0, 1fr) !important;
+        grid-template-rows: auto auto !important;
+        gap: 22px !important;
+        height: auto !important;
+    }
+
+    #week-3.week-three-custom .week-three-copy {
+        max-width: none !important;
+        max-height: none !important;
+        overflow: visible !important;
+        padding: 0 !important;
+    }
+
+    #week-3.week-three-custom .week-three-gallery {
+        grid-template-columns: minmax(0, 1fr) !important;
+        grid-template-rows: auto auto !important;
+        gap: 14px !important;
+        max-width: none !important;
+        height: auto !important;
+    }
+
+    #week-3.week-three-custom .week-three-figure {
+        height: auto !important;
+    }
+
+    #week-3.week-three-custom .week-three-figure img,
+    #week-3.week-three-custom .week-three-img {
+        width: 100% !important;
+        height: auto !important;
+        max-height: 260px !important;
+        aspect-ratio: 16 / 9;
+        object-fit: contain !important;
+    }
+
+    #week-3.week-three-custom .slide-bottom {
+        left: 7vw !important;
+        right: 7vw !important;
+        bottom: 18px !important;
+    }
+}
+
+/* Small mobile screens */
+@media (max-width: 560px) {
+    #week-3.week-three-custom {
+        padding: 100px 7% 82px !important;
+    }
+
+    #week-3.week-three-custom .week-three-heading h2 {
+        font-size: 56px !important;
+    }
+
+    #week-3.week-three-custom .week-three-copy h3 {
+        font-size: 21px !important;
+    }
+
+    #week-3.week-three-custom .week-three-copy p {
+        font-size: 11px !important;
+        line-height: 1.8 !important;
+    }
+
+    #week-3.week-three-custom .week-three-figure img,
+    #week-3.week-three-custom .week-three-img {
+        max-height: 210px !important;
     }
 }
