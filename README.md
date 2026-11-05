@@ -1,21 +1,26 @@
-# My Space - Personal Portfolio
+# My Space — Personal Portfolio
 
-A static multi-page personal portfolio website.
+A static, seven-screen personal portfolio website.
 
 ## Pages
 
-- index.html: Personal Introduction
-- interests.html: Interests and Hobbies
-- reflections.html: Course Reflection Index
-- week-2.html: Week 2 Reflection
-- week-3.html: Week 3 Reflection
-- week-4.html: Week 4 Reflection
-- week-5.html: Week 5 Reflection
-- style.css: Shared styles for all pages
+1. Personal Introduction
+2. Interests and Hobbies
+3. Course Reflections Overview
+4. Week 2 Reflection
+5. Week 3 Reflection
+6. Week 4 Reflection
+7. Week 5 Reflection
+
+## Files
+
+- index.html: Website structure and all seven screens.
+- style.css: Website colours, typography, layouts and visual design.
+- README.md: Project documentation.
 
 ## Design
 
-Fashion editorial inspired visual style.
+Fashion editorial inspired design.
 
 Main colours:
 - Grey
@@ -24,26 +29,31 @@ Main colours:
 - Blush Pink
 - White
 
-## Technologies
+## Features
 
-- HTML5
-- CSS3
+- Full-screen presentation-style layout.
+- Scroll snapping between sections.
+- Navigation links.
+- CSS geometric illustrations.
+- Responsive mobile layout.
+- No JavaScript required.
+- No external images or fonts required.
 
-No JavaScript is required.
-No external image or font services are required.
+## How to Edit
 
-## Editing
+Open index.html and replace "Your Name"
+with your own name.
 
-Replace Your Name in index.html.
+Edit the text in each weekly reflection section
+to add your actual classroom experiences.
 
-Replace example reflection content in each
-weekly HTML file with your own writing.
+## GitHub Pages
 
-## Publishing
-
-1. Upload all files to the root of your GitHub repository.
-2. Open Settings.
-3. Select Pages.
-4. Choose Deploy from a branch.
-5. Select main and / (root).
-6. Save.
+1. Create a GitHub repository.
+2. Upload index.html, style.css and README.md.
+3. Keep all three files in the repository root.
+4. Open Settings.
+5. Select Pages.
+6. Choose Deploy from a branch.
+7. Select main and / (root).
+8. Click Save.
