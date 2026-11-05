@@ -1,77 +1,49 @@
-# luowenyuewebsite
-# Personal Journal Website
+# My Space - Personal Portfolio
 
-A personal website designed in a minimalist
-editorial fashion style.
+A static multi-page personal portfolio website.
 
-## Website Pages
+## Pages
 
 - index.html: Personal Introduction
-- reflections.html: Weekly Reflections
+- interests.html: Interests and Hobbies
+- reflections.html: Course Reflection Index
 - week-2.html: Week 2 Reflection
 - week-3.html: Week 3 Reflection
 - week-4.html: Week 4 Reflection
 - week-5.html: Week 5 Reflection
+- style.css: Shared styles for all pages
 
-## CSS
+## Design
 
-- style.css: Website layout, typography,
-  colours, animations and responsive design.
-
-## Design Style
-
-The website is inspired by minimalist
-fashion editorials.
+Fashion editorial inspired visual style.
 
 Main colours:
+- Grey
+- Rose Pink
+- Charcoal
+- Blush Pink
+- White
 
-- Black
-- Ivory
-- Burgundy
+## Technologies
 
-Main features:
+- HTML5
+- CSS3
 
-- Large editorial typography
-- Fashion-inspired photography
-- Fade-in animations
-- Moving text banner
-- Image hover effects
-- Responsive design
+No JavaScript is required.
+No external image or font services are required.
 
-## How to Edit
+## Editing
 
-### Change Your Name
+Replace Your Name in index.html.
 
-Open index.html and replace
-"Your Name" with your own name.
+Replace example reflection content in each
+weekly HTML file with your own writing.
 
-### Change Your Photos
+## Publishing
 
-Upload your own photos to the images folder.
-
-Example:
-
-images/portrait.jpg
-
-Then replace the image URL in the HTML file:
-
-< img src="images/portrait.jpg" alt="My portrait">
-
-### Add Weekly Reflections
-
-Open the relevant week HTML file.
-
-Replace the example text with your own
-classroom reflections.
-
-## GitHub Pages
-
-1. Create a GitHub repository.
-2. Upload all HTML and CSS files.
-3. Open Settings.
-4. Select Pages.
-5. Choose Deploy from a branch.
-6. Select main and / (root).
-7. Click Save.
-
-The website will be published using GitHub Pages.
+1. Upload all files to the root of your GitHub repository.
+2. Open Settings.
+3. Select Pages.
+4. Choose Deploy from a branch.
+5. Select main and / (root).
+6. Save.
