@@ -1704,73 +1704,62 @@ a {
 }
 
 
-
 /* ==================================
-   WEEK 6 — SOCIAL MEDIA & IDENTITY
+   WEEK 6 — MATCH THE PORTFOLIO STYLE
 ================================== */
 
 #week-6.week-six-custom {
+    box-sizing: border-box;
     position: relative;
-    display: flex;
+
+    display: flex !important;
     flex-direction: column;
     justify-content: center;
 
-    box-sizing: border-box;
     width: 100%;
     min-height: 100vh;
     height: 100svh;
 
-    padding: 100px 7vw 75px;
-    overflow: hidden;
+    padding: 100px 7vw 65px !important;
 
-    background: #D5D3D9;
+    background: #D7D5DC !important;
     color: #29272D;
-}
 
-/* Main two-column layout */
+    overflow: hidden;
+}
 
 #week-6 .week-six-inner {
     width: 100%;
     max-width: 1400px;
-    margin: 0 auto;
+    margin: auto;
 
     display: grid;
-    grid-template-columns: 0.8fr 1.2fr;
-    gap: clamp(30px, 5vw, 75px);
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 5vw;
     align-items: center;
-
-    flex: 1;
-    min-height: 0;
 }
 
-/* Left title */
+/* LEFT TITLE */
 
 #week-6 .week-six-heading {
     position: relative;
     min-width: 0;
-    padding: 20px 0;
 }
 
 #week-6 .week-six-kicker {
     color: #C52E72;
     font-size: 9px;
     letter-spacing: 2px;
-    font-weight: 700;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
 
 #week-6 .week-six-heading h2 {
-    position: relative;
-    z-index: 1;
-
     margin: 0;
-
     font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(54px, 6.5vw, 92px);
-    line-height: 0.96;
+    font-size: clamp(54px, 6.5vw, 90px);
     font-weight: 400;
+    line-height: 0.96;
     letter-spacing: -3px;
-
     color: #29272D;
 }
 
@@ -1780,42 +1769,39 @@ a {
 }
 
 #week-6 .week-six-line {
-    width: 65px;
+    width: 60px;
     height: 3px;
     background: #D83983;
-    margin-top: 32px;
+    margin-top: 28px;
 }
 
 #week-6 .week-six-caption {
-    margin-top: 18px;
-    color: #68636D;
+    color: #77717B;
     font-size: 9px;
-    letter-spacing: 1.8px;
-    line-height: 1.8;
+    letter-spacing: 1.5px;
+    margin-top: 18px;
 }
 
 #week-6 .week-six-number {
     display: block;
     margin-top: 35px;
-
+    color: rgba(216, 57, 131, 0.17);
     font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(100px, 13vw, 175px);
+    font-size: clamp(100px, 12vw, 165px);
     line-height: 0.8;
-
-    color: rgba(216, 57, 131, 0.16);
 }
 
-/* Right reflection panel */
+/* RIGHT CONTENT */
 
 #week-6 .week-six-content {
     box-sizing: border-box;
     width: 100%;
-    max-height: calc(100svh - 190px);
+    max-height: calc(100svh - 180px);
     overflow-y: auto;
 
     padding: 30px 34px;
 
-    background: rgba(255, 255, 255, 0.72);
+    background: rgba(255,255,255,0.75);
     border-left: 3px solid #D83983;
 }
 
@@ -1824,40 +1810,35 @@ a {
 }
 
 #week-6 .week-six-label {
-    margin: 0 0 12px;
-
     color: #C52E72;
     font-size: 9px;
     font-weight: 700;
     letter-spacing: 1.8px;
+    margin-bottom: 12px;
 }
 
 #week-6 .week-six-block h3 {
-    margin: 0 0 16px;
-
     color: #29272D;
     font-family: Georgia, "Times New Roman", serif;
     font-size: clamp(20px, 2vw, 26px);
-    line-height: 1.25;
     font-weight: 400;
+    line-height: 1.3;
+    margin: 0 0 16px;
 }
 
 #week-6 .week-six-block p:not(.week-six-label) {
-    margin: 0 0 14px;
-
     color: #514D55;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 11px;
     line-height: 1.8;
+    margin: 0 0 14px;
 }
 
 #week-6 .week-six-block + .week-six-block {
-    border-top: 1px solid rgba(41, 39, 45, 0.2);
-    margin-top: 25px;
-    padding-top: 24px;
+    border-top: 1px solid rgba(41,39,45,0.2);
+    margin-top: 22px;
+    padding-top: 22px;
 }
-
-/* Scrollbar */
 
 #week-6 .week-six-content::-webkit-scrollbar {
     width: 4px;
@@ -1868,13 +1849,13 @@ a {
     border-radius: 5px;
 }
 
-/* Tablet and mobile */
+/* TABLET */
 
 @media (max-width: 850px) {
     #week-6.week-six-custom {
         height: auto;
         min-height: 100svh;
-        padding: 100px 7vw 30px;
+        padding: 100px 7vw 35px !important;
         overflow: visible;
     }
 
@@ -1884,7 +1865,7 @@ a {
     }
 
     #week-6 .week-six-heading h2 {
-        font-size: clamp(54px, 10vw, 76px);
+        font-size: 62px;
     }
 
     #week-6 .week-six-number {
@@ -1901,13 +1882,15 @@ a {
     }
 }
 
+/* MOBILE */
+
 @media (max-width: 560px) {
     #week-6.week-six-custom {
-        padding: 95px 6vw 25px;
+        padding: 95px 6vw 30px !important;
     }
 
     #week-6 .week-six-heading h2 {
-        font-size: 54px;
+        font-size: 52px;
         letter-spacing: -2px;
     }
 
@@ -1916,11 +1899,10 @@ a {
     }
 
     #week-6 .week-six-block h3 {
-        font-size: 21px;
+        font-size: 20px;
     }
 
     #week-6 .week-six-block p:not(.week-six-label) {
         font-size: 10.5px;
     }
 }
-
